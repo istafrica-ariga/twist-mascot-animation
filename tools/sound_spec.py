@@ -105,7 +105,17 @@ def measure(path):
             quiet += 1
     dead = quiet * 100 / max(1, total)
 
-    sp = spectrum(x, sr, best_i)
+    # Take the spectrum at the loudest ANALYSIS window, not at the start of the loudest 400 ms.
+    # On sparse material the 400 ms window often begins in the silence before a hit, and the
+    # spectrum then reads as all zeros.
+    sw = 4096
+    sp_i, sp_r = best_i, -1.0
+    for i in range(best_i, min(best_i + w, n - sw), sw // 4):
+        seg = x[i:i + sw]
+        r = math.sqrt(sum(v * v for v in seg) / len(seg))
+        if r > sp_r:
+            sp_r, sp_i = r, i
+    sp = spectrum(x, sr, sp_i)
     tot = sum(m for _, m in sp) or 1
     centroid = sum(f * m for f, m in sp) / tot
     low = sum(m for f, m in sp if f < 300) / tot * 100
