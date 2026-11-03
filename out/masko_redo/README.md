@@ -144,3 +144,47 @@ This is the second time this has been measured (the first was the Seedance hover
 
 **The artwork is already vector.** `~/Documents/twist-splash/build/twist-splash.riv` is 160 KB with
 the real curves. That is the sharp, light answer and it does not involve tracing anything.
+
+## The sound, rebuilt 2026-11-03
+
+The first cue sheet was rejected — "nonsense" — and fairly. It was **mono, dry, and untuned**: a
+raw noise whoosh carrying the biggest moment, and bare sine tones for the sting. That combination
+is the sound of a hobby project, and no amount of rebalancing fixes it.
+
+What apps with good audio (Duolingo being the reference) actually do, and what this now does:
+
+1. **Everything is pitched and in one key** — D major throughout. The takeoff, the settle and the
+   wordmark chord are consonant with each other, so they read as one instrument rather than three
+   unrelated noises. The takeoff is a *pitched* rise, not noise; a noise whoosh belongs in a film
+   trailer, not next to a musical sting one second later.
+2. **Notes are harmonic stacks**, six partials, each decaying at its own rate, the upper ones
+   pushed slightly sharp. That is the whole difference between a sine beep and something that
+   sounds struck.
+3. **A pitch envelope on every attack** — the note starts ~7 % sharp and falls into tune over
+   25 ms. This is the plucky "plop", and its absence is the single clearest tell of a synthetic
+   beep.
+4. **Stereo and a small room** — Schroeder reverb, 17 % wet, with different comb lengths per
+   channel so the width is real rather than a copied channel.
+
+Measured after rebuilding:
+
+| cue | share of loudest |
+|---|---|
+| wordmark arpeggio (D4–F♯4–A4–D5) | 100 % |
+| takeoff swoop | 97 % |
+| reward sparkle | 31 % |
+| anticipation | 23 % |
+| settle | 8 % |
+
+Stereo correlation **0.883** (1.000 would be dual-mono), channel balance **+0.34 dB** — inaudible.
+The puffs were cut from 0.26 to 0.15 after measuring level with the wordmark sting, which had made
+the middle of the clip a wall of sound.
+
+⚠ **Never `-c:v copy` the HEVC-alpha movie to add audio.** The alpha layer is a second parameter
+set and the copy corrupts it — symptom is `PPS id out of range` and frames decoding fully opaque.
+Re-encode video and audio in one pass; verified at 6.8 % opaque / 93.0 % clear afterwards.
+
+On the repo that prompted this: `storytold/craft-anything` is a reverse-engineering engine, and
+its audio capability is **extracting sound assets from app and game archives**. Duolingo's actual
+sound files are their copyrighted work, so nothing here is taken from them — what was taken is the
+*approach* above, which is ordinary sound-design practice and reproducible from first principles.
