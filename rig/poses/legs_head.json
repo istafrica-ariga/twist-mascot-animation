@@ -1,0 +1,1 @@
+{ "bones": { "legL_up": { "drot": 25 }, "legL_lo": { "drot": -30 }, "legR_up": { "drot": -15 }, "legR_lo": { "drot": 20 }, "head": { "drot": 10 }, "ear_L": { "drot": -18 }, "ear_R": { "drot": 20 }, "capeL_1": { "drot": 12 }, "capeL_2": { "drot": 15 }, "capeR_1": { "drot": -12 }, "capeR_2": { "drot": -15 } } }

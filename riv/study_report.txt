@@ -1,0 +1,887 @@
+
+=== ARTBOARD "Study screen animation" 393×461  (2139 components)
+  #1  Solo  "<Solo>"  @(462.15,-166.19)  active=#undefined "?"
+  #2  Shape  "<Shape>"  @(-1735814,9371428)
+    #3  PointsPath  "<PointsPath>"  4 vertices, closed
+    #2017  Fill  "<Fill>"
+      #8  SolidColor  "<SolidColor>"
+  #9  Event  "start_lesson_clicked"
+  #10  Solo  "<Solo>"  @(206.14,188.93)  active=#11 "<Shape>"
+    #11  Shape  "<Shape>"  @(64.63,-18.38)
+      #12  PointsPath  "<PointsPath>"  4 vertices, closed
+      #18  PointsPath  "<PointsPath>"  @(39.87,-3.14)  5 vertices, closed
+      #2018  Fill  "<Fill>"
+        #17  SolidColor  "<SolidColor>"  #ffcf9dff
+    #24  Shape  "<Shape>"  @(64.63,-18.38)
+      #25  PointsPath  "<PointsPath>"  4 vertices, closed
+      #31  PointsPath  "<PointsPath>"  @(39.87,-3.14)  5 vertices, closed
+      #2019  Fill  "<Fill>"
+        #30  SolidColor  "<SolidColor>"  #ffcf9dff
+    #37  Shape  "<Shape>"  @(66.75,-20.14)
+      #38  PointsPath  "<PointsPath>"  11 vertices, closed
+      #51  PointsPath  "<PointsPath>"  @(25.62,8.7)  6 vertices, closed
+      #58  PointsPath  "<PointsPath>"  @(27.79,-0.68)  8 vertices, closed
+      #2020  Fill  "<Fill>"
+        #50  SolidColor  "<SolidColor>"  #ffcf9dff
+    #67  Shape  "<Shape>"  @(76.15,-13.69)
+      #68  PointsPath  "<PointsPath>"  23 vertices, closed
+      #2021  Fill  "<Fill>"
+        #92  SolidColor  "<SolidColor>"  #ffcf9dff
+    #93  Shape  "<Shape>"  @(104.93,-23.94)  scale 0.88,0.86
+      #94  PointsPath  "<PointsPath>"  29 vertices, closed
+      #2022  Fill  "<Fill>"
+        #124  SolidColor  "<SolidColor>"  #ffcf9dff
+    #125  Shape  "<Shape>"  @(-126.26,31.53)  scale 1,0.87
+      #126  PointsPath  "<PointsPath>"  6 vertices, closed
+      #134  PointsPath  "<PointsPath>"  @(206.53,-14.44)  14 vertices, closed
+      #149  PointsPath  "<PointsPath>"  @(181.55,-58.76)  6 vertices, closed
+      #156  PointsPath  "<PointsPath>"  @(200.37,-67.04)  6 vertices, closed
+      #2023  Fill  "<Fill>"
+        #133  SolidColor  "<SolidColor>"  #ffcf9dff
+    #163  Shape  "<Shape>"  @(-127.39,3.11)  scale 1,0.9
+      #164  PointsPath  "<PointsPath>"  4 vertices, closed
+      #170  PointsPath  "<PointsPath>"  @(0.69,23.75)  12 vertices, closed
+      #183  PointsPath  "<PointsPath>"  @(19.34,34.99)  5 vertices, closed
+      #189  PointsPath  "<PointsPath>"  @(191.64,-41.12)  6 vertices, closed
+      #196  PointsPath  "<PointsPath>"  @(203.41,-36.35)  8 vertices, closed
+      #205  PointsPath  "<PointsPath>"  @(204.3,22.78)  6 vertices, closed
+      #212  PointsPath  "<PointsPath>"  @(259.15,-43.37)  4 vertices, closed
+      #2024  Fill  "<Fill>"
+        #169  SolidColor  "<SolidColor>"  #ffcf9dff
+    #217  Shape  "<Shape>"  @(-119.5,4.37)
+      #218  PointsPath  "<PointsPath>"  6 vertices, closed
+      #226  PointsPath  "<PointsPath>"  @(-2.76,18.22)  9 vertices, closed
+      #236  PointsPath  "<PointsPath>"  @(1.95,36.13)  8 vertices, closed
+      #245  PointsPath  "<PointsPath>"  @(200.35,20.55)  6 vertices, closed
+      #252  PointsPath  "<PointsPath>"  @(180.86,-21.95)  8 vertices, closed
+      #261  PointsPath  "<PointsPath>"  @(198.34,-32.82)  6 vertices, closed
+      #268  PointsPath  "<PointsPath>"  @(245.43,-55.52)  3 vertices, closed
+      #272  PointsPath  "<PointsPath>"  @(245.43,-37.66)  6 vertices, closed
+      #2025  Fill  "<Fill>"
+        #225  SolidColor  "<SolidColor>"  #ffcf9dff
+    #279  Shape  "<Shape>"  @(-123.59,-7.73)  scale 0.99,0.94
+      #280  PointsPath  "<PointsPath>"  6 vertices, closed
+      #287  PointsPath  "<PointsPath>"  @(0,27.13)  11 vertices, closed
+      #299  PointsPath  "<PointsPath>"  @(182.16,-10.43)  16 vertices, closed
+      #316  PointsPath  "<PointsPath>"  @(192.92,40.29)  3 vertices, closed
+      #320  PointsPath  "<PointsPath>"  @(242.52,-30.39)  5 vertices, closed
+      #326  PointsPath  "<PointsPath>"  @(240.54,-21.25)  16 vertices, closed
+      #343  PointsPath  "<PointsPath>"  @(262.47,-3.27)  6 vertices, closed
+      #2026  Fill  "<Fill>"
+        #350  SolidColor  "<SolidColor>"  #ffcf9dff
+    #351  Shape  "<Shape>"  @(-112.18,-19.55)  scale 1,0.92
+      #352  PointsPath  "<PointsPath>"  9 vertices, closed
+      #362  PointsPath  "<PointsPath>"  @(-8.08,29.23)  12 vertices, closed
+      #375  PointsPath  "<PointsPath>"  @(168.73,55.48)  24 vertices, closed
+      #400  PointsPath  "<PointsPath>"  @(221.55,-16.89)  3 vertices, closed
+      #404  PointsPath  "<PointsPath>"  @(215.12,-3.24)  16 vertices, closed
+      #2027  Fill  "<Fill>"
+        #421  SolidColor  "<SolidColor>"  #ffcf9dff
+    #422  Shape  "<Shape>"  @(-137.32,28.88)  scale 1.02,0.89
+      #423  PointsPath  "<PointsPath>"  4 vertices, closed
+      #428  PointsPath  "<PointsPath>"  @(16.34,-70.82)  4 vertices, closed
+      #433  PointsPath  "<PointsPath>"  @(21.12,-63.35)  6 vertices, closed
+      #440  PointsPath  "<PointsPath>"  @(34.4,-64.68)  20 vertices, closed
+      #461  PointsPath  "<PointsPath>"  @(239.37,-49.99)  8 vertices, closed
+      #470  PointsPath  "<PointsPath>"  @(209.94,-36.4)  13 vertices, closed
+      #2028  Fill  "<Fill>"
+        #484  SolidColor  "<SolidColor>"  #ffcf9dff
+    #485  Shape  "<Shape>"  @(-103.14,-30.93)  scale 0.86,0.86
+      #486  PointsPath  "<PointsPath>"  28 vertices, closed
+      #515  PointsPath  "<PointsPath>"  @(-28.34,63.48)  7 vertices, closed
+      #2029  Fill  "<Fill>"
+        #523  SolidColor  "<SolidColor>"  #ffcf9dff
+  #524  Node  "<Node>"  @(187.5,100)  rot -0.84°  scale 0.56,0.56
+    #525  RootBone  "<RootBone>"  @(-0.36,49.67)  rot -89.5°  len 58.3  scale 1,1
+      #526  Bone  "<Bone>"  len 87.39
+        #527  Node  "<Node>"  @(59.09,-4.28)  rot 90.83°  scale 0.17,0.17
+          #528  Node  "<Node>"  @(54.3,-51.97)
+            #529  Shape  "<Shape>"  @(250.45,213.66)  rot 0°
+              #530  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2030  Fill  "<Fill>"
+                #535  SolidColor  "<SolidColor>"  #ff320e64
+            #536  Shape  "<Shape>"  @(249.5,210.93)  rot 0°  scale 0.96,0.98
+              #537  PointsPath  "<PointsPath>"  23 vertices, closed
+              #2031  Fill  "<Fill>"
+                #561  SolidColor  "<SolidColor>"  #ff5d278e
+              #2032  Stroke  "<Stroke>"  thick 20
+                #562  SolidColor  "<SolidColor>"  #ff320e64
+            #563  Shape  "<Shape>"  @(66.73,181.06)  rot 0°
+              #564  PointsPath  "<PointsPath>"  11 vertices, closed
+              #2033  Fill  "<Fill>"
+                #576  LinearGradient  "<LinearGradient>"
+              #2034  Stroke  "<Stroke>"  thick 20
+                #581  SolidColor  "<SolidColor>"  #ff320e64
+            #582  Shape  "<Shape>"  @(137.15,-320.86)  rot 0°
+              #583  PointsPath  "<PointsPath>"  3 vertices, closed
+              #2035  Fill  "<Fill>"
+                #587  SolidColor  "<SolidColor>"  #ffdf95f6
+            #588  Shape  "<Shape>"  @(-142.86,-323.79)  rot 0°
+              #589  PointsPath  "<PointsPath>"  3 vertices, closed
+              #2036  Fill  "<Fill>"
+                #593  SolidColor  "<SolidColor>"  #fff6c4f8
+            #594  Shape  "<Shape>"  @(-80.26,-338.9)  rot 0°
+              #595  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2037  Fill  "<Fill>"
+                #600  SolidColor  "<SolidColor>"  #ffe8abf5
+            #601  Shape  "<Shape>"  @(-62.06,-167.64)  rot 0°
+              #602  PointsPath  "<PointsPath>"  8 vertices, closed
+              #2038  Fill  "<Fill>"
+                #611  SolidColor  "<SolidColor>"  #ffdf95f6
+            #612  Shape  "<Shape>"  @(-62.06,-171.1)  rot 0°
+              #613  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2039  Fill  "<Fill>"
+                #618  SolidColor  "<SolidColor>"  #fff6c4f8
+            #619  Shape  "<Shape>"  @(-42.8,-41.66)  rot 0°
+              #620  PointsPath  "<PointsPath>"  6 vertices, closed
+              #2040  Fill  "<Fill>"
+                #627  SolidColor  "<SolidColor>"  #ff6516aa
+            #628  Shape  "<Shape>"  @(-217.18,-296.57)  rot 0°
+              #629  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2041  Fill  "<Fill>"
+                #635  SolidColor  "<SolidColor>"  #ff1e0b48
+            #636  Shape  "<Shape>"  @(15.25,-314.09)  rot 0°
+              #637  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2042  Fill  "<Fill>"
+                #643  SolidColor  "<SolidColor>"  #ff1e0b48
+            #644  Shape  "<Shape>"  @(41.94,-321.01)  rot 0°
+              #645  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2043  Fill  "<Fill>"
+                #651  SolidColor  "<SolidColor>"  #ff571495
+            #652  Shape  "<Shape>"  @(207.82,-252.44)  rot 0°
+              #653  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2044  Fill  "<Fill>"
+                #659  SolidColor  "<SolidColor>"  #ff1e0b48
+            #660  Shape  "<Shape>"  @(227.41,-270.21)  rot 0°
+              #661  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2045  Fill  "<Fill>"
+                #667  SolidColor  "<SolidColor>"  #ff571495
+            #668  Shape  "<Shape>"  @(-198.15,-310.94)  rot 0°
+              #669  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2046  Fill  "<Fill>"
+                #675  SolidColor  "<SolidColor>"  #ff571495
+            #676  Shape  "<Shape>"  @(4.89,-115.81)  rot 0°
+              #677  PointsPath  "<PointsPath>"  8 vertices, closed
+              #2047  Fill  "<Fill>"
+                #686  RadialGradient  "<RadialGradient>"
+              #2048  Stroke  "<Stroke>"  thick 30
+                #689  SolidColor  "<SolidColor>"  #ff320e64
+          #690  Shape  "<Shape>"  @(82.33,-118.83)
+            #691  PointsPath  "<PointsPath>"  5 vertices, closed
+            #2049  Fill  "<Fill>"
+              #697  SolidColor  "<SolidColor>"  #ffe4a8f1
+          #698  Shape  "<Shape>"  @(-63.31,-120.79)
+            #699  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2050  Fill  "<Fill>"
+              #704  SolidColor  "<SolidColor>"  #ffe4a8f1
+          #705  Shape  "<Shape>"  @(218.13,39.56)  rot 2.22°
+            #706  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2051  Fill  "<Fill>"
+              #711  SolidColor  "<SolidColor>"  #ffe4a8f1
+          #712  Shape  "<Shape>"  @(-226.29,40.84)  rot 2.22°
+            #713  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2052  Fill  "<Fill>"
+              #718  SolidColor  "<SolidColor>"  #ffe4a8f1
+          #719  Shape  "<Shape>"  @(10.51,-123.96)  rot 1.37°  scale 1,1
+            #720  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2053  Fill  "<Fill>"
+              #725  SolidColor  "<SolidColor>"  #ffe4a8f1
+          #726  Node  "<Node>"  @(136.85,-46.61)
+            #727  Shape  "<Shape>"  @(-6.12,-17.74)  rot -167.97°  scale 1,-1
+              #728  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2054  Fill  "<Fill>"
+                #733  SolidColor  "<SolidColor>"  #ffffffff
+            #734  Shape  "<Shape>"  @(9.1,5.65)  rot -176.04°  scale 1,-1
+              #735  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2055  Fill  "<Fill>"
+                #740  SolidColor  "<SolidColor>"  #ff40175d
+          #741  Shape  "<Shape>"  @(150.57,-49.67)  rot -176.04°  scale 1,-1
+            #742  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2056  Fill  "<Fill>"
+              #747  SolidColor  "<SolidColor>"  #ffb755ec
+          #748  Node  "<Node>"  @(-177.05,-50.53)
+            #749  Shape  "<Shape>"  @(-6.38,-18.31)  rot 20.59°  scale 1,1
+              #750  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2057  Fill  "<Fill>"
+                #755  SolidColor  "<SolidColor>"  #ffffffff
+            #756  Shape  "<Shape>"  @(9.26,5.67)  rot 5.66°  scale 1,1
+              #757  PointsPath  "<PointsPath>"  4 vertices, closed
+              #2058  Fill  "<Fill>"
+                #762  SolidColor  "<SolidColor>"  #ff40175d
+          #763  Shape  "<Shape>"  @(-170.88,-54.21)  rot 5.66°
+            #764  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2059  Fill  "<Fill>"
+              #769  SolidColor  "<SolidColor>"  #ffb755ec
+          #770  Node  "<Node>"  @(-18.43,170.55)
+            #771  Shape  "<Shape>"  @(-2.43,70.13)
+              #772  PointsPath  "<PointsPath>"  7 vertices, closed
+              #2060  Fill  "<Fill>"
+                #780  SolidColor  "<SolidColor>"  #fff87cc3
+            #781  Shape  "<Shape>"  @(-2.5,57.04)
+              #782  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2061  Fill  "<Fill>"
+                #788  SolidColor  "<SolidColor>"  #ffcf5e99
+            #789  Shape  "<Shape>"  @(114.38,-66.56)
+              #790  PointsPath  "<PointsPath>"  6 vertices, closed
+              #2062  Fill  "<Fill>"
+                #797  LinearGradient  "<LinearGradient>"
+            #800  Shape  "<Shape>"  @(-120.27,-65.98)
+              #801  PointsPath  "<PointsPath>"  5 vertices, closed
+              #2063  Fill  "<Fill>"
+                #807  LinearGradient  "<LinearGradient>"
+            #810  Shape  "<Shape>"  @(0.02,13.13)
+              #811  PointsPath  "<PointsPath>"  11 vertices, closed
+              #2064  Fill  "<Fill>"
+                #823  SolidColor  "<SolidColor>"  #ff40175d
+              #2065  Stroke  "<Stroke>"  thick 14.12
+                #824  SolidColor  "<SolidColor>"  #ff40175d
+          #825  Shape  "<Shape>"  @(0.4,-16.97)  rot -2.09°  scale 1,1
+            #826  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2066  Fill  "<Fill>"
+              #831  SolidColor  "<SolidColor>"  #63d9d9d9
+          #832  Shape  "<Shape>"  @(-22,-0.14)  rot -2.09°  scale 1,1
+            #833  PointsPath  "<PointsPath>"  4 vertices, closed
+            #2067  Fill  "<Fill>"
+              #838  SolidColor  "<SolidColor>"  #ff40175d
+          #839  Shape  "<Shape>"  @(72.43,56.1)
+            #840  PointsPath  "<PointsPath>"  11 vertices, closed
+            #2068  Fill  "<Fill>"
+              #852  SolidColor  "<SolidColor>"  #ffb457e8
+          #853  Shape  "<Shape>"  @(67.16,69.65)
+            #854  PointsPath  "<PointsPath>"  10 vertices, closed
+            #2069  Fill  "<Fill>"
+              #865  SolidColor  "<SolidColor>"  #ffd886f6
+            #2070  Stroke  "<Stroke>"  thick 40
+              #866  SolidColor  "<SolidColor>"  #ff320e64
+      #867  RootBone  "<RootBone>"  @(-1.91,22.76)  rot -184°  len 18.72
+        #868  Bone  "<Bone>"  rot -26.68°  len 10.27
+      #869  RootBone  "<RootBone>"  @(-1.5,-23)  rot -179°  len 17.87
+        #870  Bone  "<Bone>"  rot 18.14°  len 10.25
+        #871  Shape  "<Shape>"  @(29.59,7.63)  rot -90.56°  scale 0.46,0.46
+          #872  PointsPath  "<PointsPath>"  7 vertices, 6 weighted, closed
+            #885  Skin  "<Skin>"
+              #886  Tendon  "<Tendon>"  → bone #525 "<RootBone>"
+              #887  Tendon  "<Tendon>"  → bone #526 "<Bone>"
+              #888  Tendon  "<Tendon>"  → bone #1114 "<RootBone>"
+              #889  Tendon  "<Tendon>"  → bone #1115 "<Bone>"
+              #890  Tendon  "<Tendon>"  → bone #897 "<RootBone>"
+              #891  Tendon  "<Tendon>"  → bone #898 "<Bone>"
+              #892  Tendon  "<Tendon>"  → bone #869 "<RootBone>"
+              #893  Tendon  "<Tendon>"  → bone #870 "<Bone>"
+              #894  Tendon  "<Tendon>"  → bone #867 "<RootBone>"
+              #895  Tendon  "<Tendon>"  → bone #868 "<Bone>"
+          #2071  Fill  "<Fill>"
+            #896  SolidColor  "<SolidColor>"  #ff320e64
+      #897  RootBone  "<RootBone>"  @(61,29.21)  rot 152.22°  len 33.92
+        #898  Bone  "<Bone>"  rot 21°  len 25.15
+      #899  Node  "<Node>"  @(21.8,0.75)  rot 90.95°  scale 0.46,0.46
+        #900  Shape  "<Shape>"  @(-29.26,57.52)  scale 0.97,1.21
+          #901  PointsPath  "<PointsPath>"  3 vertices, closed
+          #2072  Fill  "<Fill>"
+            #905  SolidColor  "<SolidColor>"  #ff320e64
+        #906  Shape  "<Shape>"  @(95.33,19.92)  rot -180°  scale 1.01,-1
+          #907  PointsPath  "<PointsPath>"  7 vertices, 6 weighted, closed
+            #920  Skin  "<Skin>"
+              #921  Tendon  "<Tendon>"  → bone #525 "<RootBone>"
+              #922  Tendon  "<Tendon>"  → bone #526 "<Bone>"
+              #923  Tendon  "<Tendon>"  → bone #1114 "<RootBone>"
+              #924  Tendon  "<Tendon>"  → bone #1115 "<Bone>"
+              #925  Tendon  "<Tendon>"  → bone #869 "<RootBone>"
+              #926  Tendon  "<Tendon>"  → bone #870 "<Bone>"
+              #927  Tendon  "<Tendon>"  → bone #867 "<RootBone>"
+              #928  Tendon  "<Tendon>"  → bone #868 "<Bone>"
+              #929  Tendon  "<Tendon>"  → bone #897 "<RootBone>"
+              #930  Tendon  "<Tendon>"  → bone #898 "<Bone>"
+          #2073  Fill  "<Fill>"
+            #931  SolidColor  "<SolidColor>"  #ff320e64
+        #932  Shape  "<Shape>"  @(-94.67,20.92)
+          #933  PointsPath  "<PointsPath>"  7 vertices, 6 weighted, closed
+            #946  Skin  "<Skin>"
+              #947  Tendon  "<Tendon>"  → bone #525 "<RootBone>"
+              #948  Tendon  "<Tendon>"  → bone #526 "<Bone>"
+              #949  Tendon  "<Tendon>"  → bone #1114 "<RootBone>"
+              #950  Tendon  "<Tendon>"  → bone #1115 "<Bone>"
+              #951  Tendon  "<Tendon>"  → bone #897 "<RootBone>"
+              #952  Tendon  "<Tendon>"  → bone #898 "<Bone>"
+              #953  Tendon  "<Tendon>"  → bone #867 "<RootBone>"
+              #954  Tendon  "<Tendon>"  → bone #868 "<Bone>"
+              #955  Tendon  "<Tendon>"  → bone #869 "<RootBone>"
+              #956  Tendon  "<Tendon>"  → bone #870 "<Bone>"
+          #2074  Fill  "<Fill>"
+            #957  SolidColor  "<SolidColor>"  #ff320e64
+        #958  Shape  "<Shape>"  @(70.33,114.42)  rot 174.55°  scale 1,-1
+          #959  PointsPath  "<PointsPath>"  7 vertices, 6 weighted, closed
+            #972  Skin  "<Skin>"
+              #973  Tendon  "<Tendon>"  → bone #525 "<RootBone>"
+              #974  Tendon  "<Tendon>"  → bone #526 "<Bone>"
+              #975  Tendon  "<Tendon>"  → bone #1114 "<RootBone>"
+              #976  Tendon  "<Tendon>"  → bone #1115 "<Bone>"
+              #977  Tendon  "<Tendon>"  → bone #897 "<RootBone>"
+              #978  Tendon  "<Tendon>"  → bone #898 "<Bone>"
+              #979  Tendon  "<Tendon>"  → bone #867 "<RootBone>"
+              #980  Tendon  "<Tendon>"  → bone #868 "<Bone>"
+              #981  Tendon  "<Tendon>"  → bone #869 "<RootBone>"
+              #982  Tendon  "<Tendon>"  → bone #870 "<Bone>"
+          #2075  Fill  "<Fill>"
+            #983  SolidColor  "<SolidColor>"  #ff320e64
+        #984  Shape  "<Shape>"  @(74.5,-104.58)  scale 1.25,1.24
+          #985  PointsPath  "<PointsPath>"  28 vertices, 27 weighted, closed
+            #1040  Skin  "<Skin>"
+              #1041  Tendon  "<Tendon>"  → bone #525 "<RootBone>"
+              #1042  Tendon  "<Tendon>"  → bone #526 "<Bone>"
+              #1043  Tendon  "<Tendon>"  → bone #1114 "<RootBone>"
+              #1044  Tendon  "<Tendon>"  → bone #1115 "<Bone>"
+              #1045  Tendon  "<Tendon>"  → bone #869 "<RootBone>"
+              #1046  Tendon  "<Tendon>"  → bone #870 "<Bone>"
+              #1047  Tendon  "<Tendon>"  → bone #867 "<RootBone>"
+              #1048  Tendon  "<Tendon>"  → bone #868 "<Bone>"
+              #1049  Tendon  "<Tendon>"  → bone #897 "<RootBone>"
+              #1050  Tendon  "<Tendon>"  → bone #898 "<Bone>"
+          #1052  ClippingShape  "<ClippingShape>"  source #1053 "<Shape>"
+          #2076  Fill  "<Fill>"
+            #1051  SolidColor  "<SolidColor>"  #ffb457e8
+        #1053  Shape  "<Shape>"  @(-39.17,-264.58)
+          #1054  PointsPath  "<PointsPath>"  24 vertices, 23 weighted, closed
+            #1101  Skin  "<Skin>"
+              #1102  Tendon  "<Tendon>"  → bone #525 "<RootBone>"
+              #1103  Tendon  "<Tendon>"  → bone #526 "<Bone>"
+              #1104  Tendon  "<Tendon>"  → bone #1114 "<RootBone>"
+              #1105  Tendon  "<Tendon>"  → bone #1115 "<Bone>"
+              #1106  Tendon  "<Tendon>"  → bone #897 "<RootBone>"
+              #1107  Tendon  "<Tendon>"  → bone #898 "<Bone>"
+              #1108  Tendon  "<Tendon>"  → bone #869 "<RootBone>"
+              #1109  Tendon  "<Tendon>"  → bone #870 "<Bone>"
+              #1110  Tendon  "<Tendon>"  → bone #867 "<RootBone>"
+              #1111  Tendon  "<Tendon>"  → bone #868 "<Bone>"
+          #2077  Stroke  "<Stroke>"  thick 20
+            #1112  SolidColor  "<SolidColor>"  #ff320e64
+          #2078  Fill  "<Fill>"
+            #1113  SolidColor  "<SolidColor>"  #ffd886f6
+      #1114  RootBone  "<RootBone>"  @(57.97,-28.14)  rot -150.19°  len 29.93
+        #1115  Bone  "<Bone>"  rot -18°  len 24.21
+    #1116  Shape  "<Shape>"  @(0.98,83.04)  rot 0.84°  scale 1.79,1.79
+      #1117  PointsPath  "<PointsPath>"  @(0,-0.27)  4 vertices, closed
+      #2079  Fill  "<Fill>"
+        #1122  SolidColor  "<SolidColor>"  #2a000000
+  #1123  LayoutComponentStyle  "<LayoutComponentStyle>"
+  #1124  Node  "<Node>"  @(196.5,188.66)
+    #1125  Node  "<Node>"  @(-0.25,-45.82)
+      #1126  Text  "<Text>"  @(-142.75,-10.59)
+        #1127  TextStylePaint  "<TextStylePaint>"
+          #1129  TextStyleAxis  "<TextStyleAxis>"
+          #2080  Fill  "<Fill>"
+            #1128  SolidColor  "<SolidColor>"  #ffffffff
+        #1130  TextValueRun  "<TextValueRun>"
+      #1131  Node  "<Node>"  @(110.5,0)
+        #1132  Text  "<Text>"  @(-15.75,-6.5)
+          #1133  TextStylePaint  "<TextStylePaint>"
+            #1135  TextStyleAxis  "<TextStyleAxis>"
+            #2081  Fill  "<Fill>"
+              #1134  SolidColor  "<SolidColor>"  #ffffffff
+          #1136  TextValueRun  "<TextValueRun>"
+        #1137  Shape  "<Shape>"  @(0.25,0)
+          #1138  PointsPath  "<PointsPath>"  @(-0.25,0)  4 vertices, closed
+          #2082  Fill  "<Fill>"
+            #1143  SolidColor  "<SolidColor>"  #ff3c1285
+    #1144  Node  "<Node>"  @(0,7.09)
+      #1145  Text  "<Text>"  @(-86,-7.94)
+        #1146  TextStylePaint  "<TextStylePaint>"
+          #1148  TextStyleAxis  "<TextStyleAxis>"
+          #2083  Fill  "<Fill>"
+            #1147  SolidColor  "<SolidColor>"  #ff3c1285
+        #1149  TextValueRun  "<TextValueRun>"
+      #1150  Shape  "<Shape>"  @(69,0)
+        #1151  PointsPath  "<PointsPath>"  23 vertices, closed
+        #2084  Fill  "<Fill>"
+          #1175  SolidColor  "<SolidColor>"  #ff3c1285
+      #1176  Shape  "<Shape>"  @(-0.25,-0.25)
+        #1177  PointsPath  "<PointsPath>"  @(0.25,0.25)  4 vertices, closed
+        #2085  Fill  "<Fill>"
+          #1182  SolidColor  "<SolidColor>"  #ffffffff
+    #1183  Shape  "<Shape>"  @(0,0.44)
+      #1184  PointsPath  "<PointsPath>"  12 vertices, closed
+      #2086  Fill  "<Fill>"
+        #1197  LinearGradient  "<LinearGradient>"
+  #1200  Node  "<Node>"  @(187.5,157)  scale 0.86,0.9
+    #1201  Shape  "<Shape>"  @(-24.13,-0.82)  rot 66°
+      #1202  PointsPath  "<PointsPath>"  @(0.25,0)  4 vertices, closed
+      #2087  Fill  "<Fill>"
+        #1207  LinearGradient  "<LinearGradient>"
+    #1210  Shape  "<Shape>"  @(-26.28,-0.5)  rot 66°  scale 1.03,1.03
+      #1211  PointsPath  "<PointsPath>"  @(0.25,0)  4 vertices, closed
+      #2088  Fill  "<Fill>"
+        #1216  SolidColor  "<SolidColor>"  #ffdfbcff
+    #1217  Shape  "<Shape>"  @(-27.63,-0.18)  rot 66°  scale 1.04,1.05
+      #1218  PointsPath  "<PointsPath>"  @(0.25,0)  4 vertices, closed
+      #2089  Fill  "<Fill>"
+        #1223  SolidColor  "<SolidColor>"  #ffab52ff
+    #1224  Shape  "<Shape>"  @(-27.63,-0.18)  rot 66°  scale 1.04,1.05
+      #1225  PointsPath  "<PointsPath>"  @(0.25,0)  6 vertices, closed
+      #2090  Fill  "<Fill>"
+        #1232  LinearGradient  "<LinearGradient>"
+    #1235  Shape  "<Shape>"  @(-27.63,-0.18)  rot 66°  scale 1.04,1.05
+      #1236  PointsPath  "<PointsPath>"  @(0.25,0)  6 vertices, closed
+      #2091  Fill  "<Fill>"
+        #1243  LinearGradient  "<LinearGradient>"
+  #1246  Node  "<Node>"  @(185,411.5)  scale 0.86,0.9
+    #1247  Shape  "<Shape>"  @(-24.13,-0.82)  rot 66°
+      #1248  PointsPath  "<PointsPath>"  @(0.25,0)  4 vertices, closed
+      #2092  Fill  "<Fill>"
+        #1253  LinearGradient  "<LinearGradient>"
+    #1256  Shape  "<Shape>"  @(-26.28,-0.5)  rot 66°  scale 1.03,1.03
+      #1257  PointsPath  "<PointsPath>"  @(0.25,0)  4 vertices, closed
+      #2093  Fill  "<Fill>"
+        #1262  SolidColor  "<SolidColor>"  #ffdfbcff
+    #1263  Shape  "<Shape>"  @(-27.63,-0.18)  rot 66°  scale 1.04,1.05
+      #1264  PointsPath  "<PointsPath>"  @(0.25,0)  4 vertices, closed
+      #2094  Fill  "<Fill>"
+        #1269  SolidColor  "<SolidColor>"  #ffab52ff
+    #1270  Shape  "<Shape>"  @(-27.63,-0.18)  rot 66°  scale 1.04,1.05
+      #1271  PointsPath  "<PointsPath>"  @(0.25,0)  6 vertices, closed
+      #2095  Fill  "<Fill>"
+        #1278  LinearGradient  "<LinearGradient>"
+    #1281  Shape  "<Shape>"  @(-27.63,-0.18)  rot 66°  scale 1.04,1.05
+      #1282  PointsPath  "<PointsPath>"  @(0.25,0)  6 vertices, closed
+      #2096  Fill  "<Fill>"
+        #1289  LinearGradient  "<LinearGradient>"
+  #1292  Node  "<Node>"  @(264.5,195.5)  rot 176.8°  scale 0.06,-0.06
+    #1293  RootBone  "<RootBone>"  @(261,-90.5)  rot 158°  len 54.8  scale 9.89,9.89
+      #1294  RootBone  "<RootBone>"  @(-12.74,-3.34)  rot -3.13°  len 10.5  scale 1,1
+      #1295  RootBone  "<RootBone>"  @(-6.71,4.65)  rot -5.06°  len 10.11  scale 1,1
+      #1296  RootBone  "<RootBone>"  @(54.56,-4.5)  rot -1.41°  len 10.88  scale 1,1
+      #1297  RootBone  "<RootBone>"  @(60.56,3.16)  rot 0.99°  len 11.5  scale 1,1
+      #1298  RootBone  "<RootBone>"  @(10.25,-12.18)  rot -151.97°  len 15.2  scale 1,1
+        #1299  RootBone  "<RootBone>"  @(-0.04,0.65)  rot 168.24°  len 4.94  scale 1,1
+        #1300  RootBone  "<RootBone>"  @(28.36,0.59)  rot 155.86°  len 5.68  scale 1,1
+      #1301  RootBone  "<RootBone>"  @(75.64,-15.28)  rot -150.22°  len 13.26  scale 1,1
+        #1302  RootBone  "<RootBone>"  @(-0.64,0.08)  rot 157.33°  len 5.65  scale 1,1
+        #1303  RootBone  "<RootBone>"  @(26.33,-0.18)  rot 156.76°  len 6.09
+    #1304  Node  "<Node>"  @(-37.25,0.96)
+      #1305  Node  "<Node>"  @(23.52,-5.34)  rot 0°
+        #1306  Shape  "<Shape>"  @(349.53,-118.9)  rot 0°  scale 1,1
+          #1307  PointsPath  "<PointsPath>"  10 vertices, 9 weighted, closed
+            #1326  Skin  "<Skin>"
+              #1327  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1328  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1329  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1330  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1331  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1332  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1333  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1334  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1335  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1336  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1337  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2097  Fill  "<Fill>"
+            #1338  SolidColor  "<SolidColor>"
+          #2098  Stroke  "<Stroke>"  thick 2
+            #1339  SolidColor  "<SolidColor>"  #ff0b0039
+        #1340  Shape  "<Shape>"  @(-256.27,157.79)  rot 0°  scale 1,1
+          #1341  PointsPath  "<PointsPath>"  10 vertices, 9 weighted, closed
+            #1360  Skin  "<Skin>"
+              #1361  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1362  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1363  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1364  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1365  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1366  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1367  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1368  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1369  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1370  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1371  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2099  Fill  "<Fill>"
+            #1372  SolidColor  "<SolidColor>"
+          #2100  Stroke  "<Stroke>"  thick 2
+            #1373  SolidColor  "<SolidColor>"  #ff0b0039
+        #1374  Shape  "<Shape>"  @(264.04,-161.8)  rot 0°  scale 1,1
+          #1375  PointsPath  "<PointsPath>"  10 vertices, 9 weighted, closed
+            #1394  Skin  "<Skin>"
+              #1395  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1396  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1397  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1398  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1399  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1400  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1401  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1402  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1403  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1404  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1405  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2101  Fill  "<Fill>"
+            #1406  SolidColor  "<SolidColor>"
+          #2102  Stroke  "<Stroke>"  thick 2
+            #1407  SolidColor  "<SolidColor>"  #ff0b0039
+        #1408  Shape  "<Shape>"  @(-353,118.58)  rot 0°  scale 1,1
+          #1409  PointsPath  "<PointsPath>"  10 vertices, 9 weighted, closed
+            #1428  Skin  "<Skin>"
+              #1429  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1430  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1431  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1432  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1433  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1434  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1435  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1436  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1437  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1438  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1439  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2103  Fill  "<Fill>"
+            #1440  SolidColor  "<SolidColor>"
+          #2104  Stroke  "<Stroke>"  thick 2
+            #1441  SolidColor  "<SolidColor>"  #ff0b0039
+      #1442  Node  "<Node>"  @(-2.19,-8.68)  rot 0°
+        #1443  Shape  "<Shape>"  @(3.81,-36.2)  rot 0°  scale 1,1
+          #1444  PointsPath  "<PointsPath>"  8 vertices, 7 weighted, closed
+            #1459  Skin  "<Skin>"
+              #1460  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1461  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1462  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1463  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1464  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1465  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1466  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1467  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1468  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1469  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1470  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2105  Fill  "<Fill>"
+            #1471  LinearGradient  "<LinearGradient>"
+        #1474  Shape  "<Shape>"  @(0.19,-11.9)  rot 0°  scale 1,1
+          #1475  PointsPath  "<PointsPath>"  8 vertices, 7 weighted, closed
+            #1490  Skin  "<Skin>"
+              #1491  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1492  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1493  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1494  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1495  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1496  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1497  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1498  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1499  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1500  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+              #1501  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+          #2106  Fill  "<Fill>"
+            #1502  SolidColor  "<SolidColor>"  #fffad3fe
+        #1503  Shape  "<Shape>"  @(-0.63,-1.06)  rot 0°  scale 1,1
+          #1504  PointsPath  "<PointsPath>"  9 vertices, 8 weighted, closed
+            #1521  Skin  "<Skin>"
+              #1522  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1523  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1524  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1525  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1526  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1527  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1528  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1529  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1530  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1531  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1532  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2107  Fill  "<Fill>"
+            #1533  SolidColor  "<SolidColor>"  #ffc03bf8
+        #1534  Shape  "<Shape>"  @(-1.74,-0.59)  rot 0°  scale 1,1
+          #1535  PointsPath  "<PointsPath>"  10 vertices, 9 weighted, closed
+            #1554  Skin  "<Skin>"
+              #1555  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+              #1556  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+              #1557  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+              #1558  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+              #1559  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+              #1560  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+              #1561  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+              #1562  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+              #1563  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #1564  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+              #1565  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #2108  Fill  "<Fill>"
+            #1566  SolidColor  "<SolidColor>"  #ff5e11b0
+      #1567  Shape  "<Shape>"  @(-3.46,-1.16)  rot 0°  scale 1,1
+        #1568  PointsPath  "<PointsPath>"  8 vertices, 7 weighted, closed
+          #1583  Skin  "<Skin>"
+            #1584  Tendon  "<Tendon>"  → bone #1293 "<RootBone>"
+            #1585  Tendon  "<Tendon>"  → bone #1296 "<RootBone>"
+            #1586  Tendon  "<Tendon>"  → bone #1297 "<RootBone>"
+            #1587  Tendon  "<Tendon>"  → bone #1295 "<RootBone>"
+            #1588  Tendon  "<Tendon>"  → bone #1294 "<RootBone>"
+            #1589  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+            #1590  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+            #1591  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+            #1592  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+            #1593  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #1594  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+        #2109  Fill  "<Fill>"
+          #1595  SolidColor  "<SolidColor>"  #ff1d0351
+    #1596  Node  "<Node>"  @(14,19.5)
+      #1597  Node  "<Node>"  @(-294.99,320.27)  rot 0°
+        #1598  Node  "<Node>"  @(120.5,12.5)  rot 0°
+          #1599  Node  "<Node>"  @(40.96,1.46)
+            #1600  Shape  "<Shape>"  @(4.58,-1.8)  rot 10.73°  scale 1,1
+              #1601  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+                #1610  Skin  "<Skin>"
+                  #1611  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #2110  Fill  "<Fill>"
+                #1612  SolidColor  "<SolidColor>"  #ffc864fa
+            #1613  Shape  "<Shape>"  @(0,-0.01)  rot 10.73°  scale 1,1
+              #1614  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+                #1623  Skin  "<Skin>"
+                  #1624  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #2111  Fill  "<Fill>"
+                #1625  SolidColor  "<SolidColor>"  #ff230256
+            #1626  Shape  "<Shape>"  @(-0.14,0.18)  rot 10.73°  scale 1,1
+              #1627  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+                #1636  Skin  "<Skin>"
+                  #1637  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #2112  Fill  "<Fill>"
+                #1638  SolidColor  "<SolidColor>"  #ffae33f8
+            #1639  Shape  "<Shape>"  @(-3.8,0.63)  rot 10.73°  scale 1,1
+              #1640  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+                #1649  Skin  "<Skin>"
+                  #1650  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+              #2113  Fill  "<Fill>"
+                #1651  SolidColor  "<SolidColor>"  #ffe5a7fb
+          #1652  Shape  "<Shape>"  @(-49.7,17.18)  rot 0°  scale 1,1
+            #1653  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1664  Skin  "<Skin>"
+                #1665  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+            #1667  ClippingShape  "<ClippingShape>"  source #1668 "<Shape>"
+            #2114  Fill  "<Fill>"
+              #1666  SolidColor  "<SolidColor>"  #ffb03af7
+          #1668  Shape  "<Shape>"  @(17.74,-2.96)  rot 0°  scale 0.97,1
+            #1669  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1680  Skin  "<Skin>"
+                #1681  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+          #1682  Shape  "<Shape>"  @(17.88,-3)  rot 0°  scale 1.06,1.09
+            #1683  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1692  Skin  "<Skin>"
+                #1693  Tendon  "<Tendon>"  → bone #1303 "<RootBone>"
+            #2115  Fill  "<Fill>"
+              #1694  SolidColor  "<SolidColor>"  #ff000000
+        #1695  Shape  "<Shape>"  @(12.49,-4.02)  rot 1.15°  scale 1,1
+          #1696  PointsPath  "<PointsPath>"  7 vertices, 6 weighted, closed
+            #1709  Skin  "<Skin>"
+              #1710  Tendon  "<Tendon>"  → bone #1301 "<RootBone>"
+          #2116  Fill  "<Fill>"
+            #1711  LinearGradient  "<LinearGradient>"
+          #2117  Stroke  "<Stroke>"  thick 15
+            #1714  SolidColor  "<SolidColor>"  #ff000000
+        #1715  Node  "<Node>"  @(-136.16,-28.29)  rot 0°
+          #1716  Shape  "<Shape>"  @(35.72,4.26)  rot 13.21°  scale 1,1
+            #1717  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1726  Skin  "<Skin>"
+                #1727  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+            #2118  Fill  "<Fill>"
+              #1728  RadialGradient  "<RadialGradient>"
+          #1732  Shape  "<Shape>"  @(29.24,7.23)  rot 0°  scale 1.01,1.03
+            #1733  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1742  Skin  "<Skin>"
+                #1743  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+            #2119  Fill  "<Fill>"
+              #1744  SolidColor  "<SolidColor>"  #ff45008a
+          #1745  Shape  "<Shape>"  @(-54.02,16.18)  rot 0°  scale 1,1
+            #1746  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1755  Skin  "<Skin>"
+                #1756  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+            #1758  ClippingShape  "<ClippingShape>"  source #1759 "<Shape>"
+            #2120  Fill  "<Fill>"
+              #1757  SolidColor  "<SolidColor>"  #ffb03af7
+          #1759  Shape  "<Shape>"  @(9.45,0.35)  rot 0°  scale 1,1
+            #1760  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1771  Skin  "<Skin>"
+                #1772  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+            #2121  Fill  "<Fill>"
+              #1773  LinearGradient  "<LinearGradient>"
+          #1776  Shape  "<Shape>"  @(9.32,2.13)  rot 0°  scale 1.1,1.09
+            #1777  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1788  Skin  "<Skin>"
+                #1789  Tendon  "<Tendon>"  → bone #1302 "<RootBone>"
+            #2122  Fill  "<Fill>"
+              #1790  SolidColor  "<SolidColor>"  #ff000000
+      #1791  Node  "<Node>"  @(299,25.5)  rot 0°
+        #1792  Node  "<Node>"  @(126.24,16.38)  rot 0°
+          #1793  Shape  "<Shape>"  @(42.96,-1.37)  rot 11.64°  scale 1,1
+            #1794  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1803  Skin  "<Skin>"
+                #1804  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #2123  Fill  "<Fill>"
+              #1805  SolidColor  "<SolidColor>"  #ffc864fa
+          #1806  Shape  "<Shape>"  @(38.58,0.25)  rot 11.64°  scale 1,1
+            #1807  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1816  Skin  "<Skin>"
+                #1817  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #2124  Fill  "<Fill>"
+              #1818  SolidColor  "<SolidColor>"  #ff230256
+          #1819  Shape  "<Shape>"  @(38.45,0.44)  rot 11.64°  scale 1,1
+            #1820  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1829  Skin  "<Skin>"
+                #1830  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #2125  Fill  "<Fill>"
+              #1831  SolidColor  "<SolidColor>"  #ffae33f8
+          #1832  Shape  "<Shape>"  @(34.97,0.81)  rot 11.64°  scale 1,1
+            #1833  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1842  Skin  "<Skin>"
+                #1843  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #2126  Fill  "<Fill>"
+              #1844  SolidColor  "<SolidColor>"  #ffe5a7fb
+          #1845  Shape  "<Shape>"  @(-47.54,13.82)  rot 0°  scale 1.12,1
+            #1846  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1857  Skin  "<Skin>"
+                #1858  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #1860  ClippingShape  "<ClippingShape>"  source #1861 "<Shape>"
+            #2127  Fill  "<Fill>"
+              #1859  SolidColor  "<SolidColor>"  #ffb03af7
+          #1861  Shape  "<Shape>"  @(17.13,-3.49)  rot 0°  scale 0.97,1
+            #1862  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1871  Skin  "<Skin>"
+                #1872  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+          #1873  Shape  "<Shape>"  @(15.92,-2.66)  rot 0°  scale 1.08,1.08
+            #1874  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1883  Skin  "<Skin>"
+                #1884  Tendon  "<Tendon>"  → bone #1300 "<RootBone>"
+            #2128  Fill  "<Fill>"
+              #1885  SolidColor  "<SolidColor>"  #ff000000
+        #1886  Shape  "<Shape>"  @(3,2)  rot -2.93°  scale 1,1
+          #1887  PointsPath  "<PointsPath>"  8 vertices, 7 weighted, closed
+            #1902  Skin  "<Skin>"
+              #1903  Tendon  "<Tendon>"  → bone #1298 "<RootBone>"
+          #2129  Fill  "<Fill>"
+            #1904  LinearGradient  "<LinearGradient>"
+          #2130  Stroke  "<Stroke>"  thick 15
+            #1907  SolidColor  "<SolidColor>"  #ff000000
+        #1908  Node  "<Node>"  @(-143.69,-16.9)  rot 0°
+          #1909  Shape  "<Shape>"  @(-50.06,12.13)  rot 0°  scale 1,1
+            #1910  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1921  Skin  "<Skin>"
+                #1922  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+            #2131  Fill  "<Fill>"
+              #1923  SolidColor  "<SolidColor>"  #ffb03af7
+            #2132  Stroke  "<Stroke>"  thick 1.79
+              #1924  SolidColor  "<SolidColor>"  #ffba4bf9
+          #1925  Shape  "<Shape>"  @(32.62,1.14)  rot 13.21°  scale 1,1
+            #1926  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1935  Skin  "<Skin>"
+                #1936  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+            #2133  Fill  "<Fill>"
+              #1937  RadialGradient  "<RadialGradient>"
+          #1940  Shape  "<Shape>"  @(28.43,1.98)  rot 0°  scale 1,1
+            #1941  PointsPath  "<PointsPath>"  9 vertices, 8 weighted, closed
+              #1958  Skin  "<Skin>"
+                #1959  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+            #2134  Stroke  "<Stroke>"  thick 2.68
+              #1960  LinearGradient  "<LinearGradient>"
+          #1963  Shape  "<Shape>"  @(28.43,1.98)  rot 13.21°  scale 1,1
+            #1964  PointsPath  "<PointsPath>"  5 vertices, 4 weighted, closed
+              #1973  Skin  "<Skin>"
+                #1974  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+            #2135  Fill  "<Fill>"
+              #1975  LinearGradient  "<LinearGradient>"
+          #1978  Shape  "<Shape>"  @(8.42,-2.46)  rot 0°  scale 1,1
+            #1979  PointsPath  "<PointsPath>"  6 vertices, 5 weighted, closed
+              #1990  Skin  "<Skin>"
+                #1991  Tendon  "<Tendon>"  → bone #1299 "<RootBone>"
+            #2136  Stroke  "<Stroke>"  thick 10.74
+              #1992  SolidColor  "<SolidColor>"  #ff000000
+  #1993  Node  "<Node>"  @(329.5,286.5)
+    #1994  Shape  "<Shape>"  @(-29.14,-0.05)
+      #1995  PointsPath  "<PointsPath>"  4 vertices, closed
+      #2137  Fill  "<Fill>"
+        #2000  LinearGradient  "<LinearGradient>"
+    #2003  ClippingShape  "<ClippingShape>"  source #2004 "<Node>"
+  #2004  Node  "<Node>"  @(328.5,286.5)
+    #2005  Shape  "<Shape>"  @(-28.14,-0.05)
+      #2006  PointsPath  "<PointsPath>"  9 vertices, closed
+      #2138  Fill  "<Fill>"
+        #2016  SolidColor  "<SolidColor>"  #ffe5def4
+
+--- 22 animations
+  "Timeline 1"  60f @60fps = 1s  loop=oneShot  keys 0 objects
+     
+  "Button_Long_Text"  60f @60fps = 1s  loop=oneShot  keys 2 objects
+     <Shape>[x×1]  <Text>[x×1]
+  "Button click"  10f @60fps = 0.17s  loop=oneShot  keys 1 objects
+     <Node>[x×2,y×3]
+  "Ligtning 2"  210f @60fps = 3.5s  loop=loop  keys 3 objects
+     <Node>[x×1]  <Shape>[scaleX×1]  <Solo>[activeComponentId×13]
+  "Theme_Green 3"  100f @60fps = 1.67s  loop=oneShot  keys 375 objects
+     <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×4,inDistance×4,outRotation×4,outDistance×4]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <Node>[scaleX×2,scaleY×2,x×2,y×2]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <GradientStop>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <Node>[opacity×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  …+335
+  "Theme_Brown 3"  100f @60fps = 1.67s  loop=oneShot  keys 376 objects
+     <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×4,inDistance×4,outRotation×4,outDistance×4]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×3,y×3,radius×2]  <GradientStop>[colorValue×1,position×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <Node>[opacity×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  …+336
+  "Theme_Blue 3"  100f @60fps = 1.67s  loop=oneShot  keys 375 objects
+     <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×4,inDistance×4,outRotation×4,outDistance×4]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1,position×1]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <GradientStop>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <Node>[opacity×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  …+335
+  "Theme_Purple 3"  120f @60fps = 2s  loop=oneShot  keys 282 objects
+     <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <Node>[opacity×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  …+242
+  "start_screen"  60f @60fps = 1s  loop=oneShot  keys 10 objects
+     <Node>[y×1]  <LayoutComponentStyle>[displayValue×1]  <Node>[y×1]  <Node>[y×1]  <Node>[y×1]  <Solo>[y×1]  <Node>[y×1]  Study screen animation[height×1,x×1,y×1,width×1]  <Node>[y×1]  <Node>[y×1]
+  "Ligtning upper"  210f @60fps = 3.5s  loop=loop  keys 1 objects
+     <Solo>[activeComponentId×13]
+  "Theme_Purple 2"  120f @60fps = 2s  loop=oneShot  keys 49 objects
+     <Shape>[scaleX×1,scaleY×1,x×1,y×1,rotation×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,length×1,x×1,y×1,rotation×1]  <StraightVertex>[x×1,y×1,radius×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <StraightVertex>[x×1,y×1,radius×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,y×1,rotation×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <StraightVertex>[x×1,y×1,radius×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,rotation×1]  <SolidColor>[colorValue×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <Node>[opacity×1]  <Bone>[length×1,rotation×1]  <StraightVertex>[x×1,y×1,radius×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <StraightVertex>[x×1,y×1,radius×1]  <SolidColor>[colorValue×1]  <RootBone>[scaleX×1,scaleY×1,x×1,opacity×1,y×1,rotation×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <LinearGradient>[opacity×2]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1,rotation×1]  <StraightVertex>[x×1,y×1,radius×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <Bone>[scaleX×1,scaleY×1,rotation×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,length×1,x×1,y×1,rotation×1]  <StraightVertex>[x×1,y×1,radius×1]  <StraightVertex>[x×1,y×1,radius×1]  <Bone>[scaleX×1,scaleY×1,opacity×1,rotation×1]  <StraightVertex>[x×1,y×1,radius×1]  …+9
+  "Theme_Blue 2"  100f @60fps = 1.67s  loop=oneShot  keys 144 objects
+     <StraightVertex>[x×1,y×1,radius×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1,rotation×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,length×1,x×1,y×1,rotation×1]  <GradientStop>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <CubicDetachedVertex>[x×1,y×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <StraightVertex>[x×1,y×1,radius×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,y×1,rotation×1]  <GradientStop>[colorValue×1,position×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,rotation×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <Bone>[length×1,rotation×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  …+104
+  "Theme_Brown 2"  100f @60fps = 1.67s  loop=oneShot  keys 145 objects
+     <StraightVertex>[x×1,y×1,radius×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1,rotation×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,length×1,x×1,y×1,rotation×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <CubicDetachedVertex>[x×1,y×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <StraightVertex>[x×1,y×1,radius×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,y×1,rotation×1]  <GradientStop>[colorValue×1,position×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,rotation×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <Bone>[length×1,rotation×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  …+105
+  "Theme_Green 2"  100f @60fps = 1.67s  loop=oneShot  keys 144 objects
+     <StraightVertex>[x×1,y×1,radius×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1,rotation×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,length×1,x×1,y×1,rotation×1]  <GradientStop>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <CubicDetachedVertex>[x×1,y×1]  <GradientStop>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×2]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <StraightVertex>[x×1,y×1,radius×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,y×1,rotation×1]  <GradientStop>[colorValue×1,position×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <RootBone>[scaleX×1,scaleY×1,opacity×1,rotation×1]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <Shape>[scaleX×1,scaleY×1,x×1,y×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <Bone>[length×1,rotation×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <CubicDetachedVertex>[x×1,y×1,inRotation×1,inDistance×1,outRotation×1,outDistance×1]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  …+104
+  "Route_10%"  120f @60fps = 2s  loop=oneShot  keys 4 objects
+     <CubicAsymmetricVertex>[x×7,inDistance×10,y×7,outDistance×3,rotation×10]  <CubicAsymmetricVertex>[x×10,inDistance×3,y×10,outDistance×6,rotation×7]  <CubicAsymmetricVertex>[x×2,inDistance×3,y×2,outDistance×3,rotation×4]  <CubicAsymmetricVertex>[x×19,inDistance×14,y×19,outDistance×13,rotation×15]
+  "Route_0%"  120f @60fps = 2s  loop=oneShot  keys 4 objects
+     <CubicAsymmetricVertex>[inDistance×16,x×29,outDistance×15,y×29,rotation×17]  <CubicAsymmetricVertex>[inDistance×3,x×3,outDistance×3,y×3,rotation×4]  <CubicAsymmetricVertex>[inDistance×6,x×12,outDistance×7,y×12,rotation×10]  <CubicAsymmetricVertex>[inDistance×13,x×10,outDistance×5,y×10,rotation×13]
+  "Inverted"  60f @60fps = 1s  loop=oneShot  keys 1 objects
+     <Node>[scaleX×1]
+  "Theme_Purple"  120f @60fps = 2s  loop=oneShot  keys 278 objects
+     <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  …+238
+  "Theme_Blue"  100f @60fps = 1.67s  loop=oneShot  keys 371 objects
+     <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×4,inDistance×4,outRotation×4,outDistance×4]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×4,y×4,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <GradientStop>[colorValue×1,position×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <GradientStop>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  …+331
+  "Theme_Brown"  100f @60fps = 1.67s  loop=oneShot  keys 372 objects
+     <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×4,inDistance×4,outRotation×4,outDistance×4]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×4,y×4,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <GradientStop>[colorValue×1,position×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <SolidColor>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <GradientStop>[colorValue×1,position×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  …+332
+  "Theme_Green"  100f @60fps = 1.67s  loop=oneShot  keys 371 objects
+     <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×4,inDistance×4,outRotation×4,outDistance×4]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <Node>[scaleX×2,scaleY×2,x×2,y×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <StraightVertex>[x×3,y×3,radius×2]  <CubicDetachedVertex>[x×4,y×4,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <SolidColor>[colorValue×1]  <CubicDetachedVertex>[x×4,y×4,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <CubicDetachedVertex>[x×3,y×3,inRotation×3,inDistance×3,outRotation×3,outDistance×3]  <SolidColor>[colorValue×1]  <GradientStop>[colorValue×1]  <SolidColor>[colorValue×1]  <StraightVertex>[x×2,y×2,radius×2]  <CubicDetachedVertex>[x×2,y×2,inRotation×2,inDistance×2,outRotation×2,outDistance×2]  …+331
+  "Ligtning"  210f @60fps = 3.5s  loop=loop  keys 1 objects
+     <Solo>[activeComponentId×13]
+
+--- 1 state machines
+  SM "Study"  inputs: Bool "Button_Long_Text", Trigger "Button click", Bool "Inverted", Number "Theme"  listeners: 2
+    layer "Theme_Colors"
+      [0] AnyState
+          → [3] ViewModelCondition PropertyViewModelComparator ValueNumberComparator=2
+          → [5] ViewModelCondition PropertyViewModelComparator ValueNumberComparator=4
+          → [6] ViewModelCondition PropertyViewModelComparator ValueNumberComparator=3
+      [1] ExitState
+      [2] EntryState
+      [3] "Theme_Green"
+      [4] "Theme_Purple"
+      [5] "Theme_Brown"
+      [6] "Theme_Blue"
+    layer "Lightning"
+      [0] AnyState
+      [1] ExitState
+      [2] EntryState
+          → [3] 
+      [3] "Ligtning"
+    layer "Inverted"
+      [0] AnyState
+      [1] ExitState
+      [2] EntryState
+          → [3] ViewModelCondition PropertyViewModelComparator ValueBooleanComparator=true
+      [3] "Inverted"
+    layer "Route"
+      [0] AnyState
+      [1] ExitState
+      [2] EntryState
+          → [3] 
+      [3] "Route_10%"
+    layer "Starting_Screen"
+      [0] AnyState
+      [1] ExitState
+      [2] EntryState
+    layer "Button_Click"
+      [0] AnyState
+      [1] ExitState
+      [2] EntryState
+          → [3] ViewModelCondition PropertyViewModelComparator ValueBooleanComparator=true
+      [3] "Button click"
+    layer "Button_Long_Text"
+      [0] AnyState
+      [1] ExitState
+      [2] EntryState
+          → [3] BoolCondition(Button_Long_Text)
+      [3] "Button_Long_Text"

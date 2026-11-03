@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "typeRoots": [
+      "../../twist-mobile-develop/node_modules/@types"
+    ],
+    "paths": {
+      "react": [
+        "../../twist-mobile-develop/node_modules/@types/react"
+      ],
+      "react/jsx-runtime": [
+        "../../twist-mobile-develop/node_modules/@types/react/jsx-runtime"
+      ],
+      "react-native": [
+        "../../twist-mobile-develop/node_modules/react-native"
+      ],
+      "react-native-reanimated": [
+        "../../twist-mobile-develop/node_modules/react-native-reanimated"
+      ],
+      "@shopify/react-native-skia": [
+        "../../twist-mobile-develop/node_modules/@shopify/react-native-skia"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": []
+}

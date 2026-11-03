@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "compilerOptions": { "resolveJsonModule": true }, "include": ["src", "../rig/mascot.ts"], "exclude": ["src/react-native"] }

@@ -1,0 +1,19 @@
+node_modules/
+
+# Debug and scratch output — large, regenerable, and not part of the record.
+check/
+video/
+out/launch/masko/
+out/launch/frames/
+out/masko_redo/seq/
+out/masko_redo/cmp/
+
+# Per-frame renders. The composed comparison sheets are committed; the frames they
+# were built from are not, since every script here regenerates them.
+**/frames/
+**/anim/
+**/anim2/
+**/anim3/
+
+.DS_Store
+*.log
