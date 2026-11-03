@@ -1,0 +1,257 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Twist Launch</title>
+<!--
+  The splash launch, scored in the house sound engine from badges/_kit.
+
+  The synth helpers (marimba / bell / pluck / voice / env / osc / swell, the convolution room and
+  the compressor) are the kit's, copied verbatim from badges/insight/insight-badge.html so this
+  sounds like the rest of the app rather than like a separate project. The house rule from
+  _kit/GUIDE.md applies: "Duolingo-style — woody marimba, bells, plucks, rising major notes; no
+  harsh noise. Every key beat has a sound and (for important ones) a haptic. Keep beats >= 80 ms
+  apart."
+
+  One CUES sheet drives both the audio and the haptics, exactly as the badges do.
+  Render with:  node tools/render_launch_sound.mjs
+-->
+<body style="background:#15052E;color:#fff;font:14px -apple-system,sans-serif;padding:24px">
+<h1 style="font-size:18px;margin:0 0 12px">Twist launch — sound + haptics</h1>
+<button id="play" style="font:inherit;padding:8px 16px">Play</button>
+<pre id="log" style="color:#B9A6E8"></pre>
+<script>
+  const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+  const lerp = (a, b, k) => a + (b - a) * k;
+
+  // ---------------------------------------------------------------------------
+  // Sound: synthesised with Web Audio (no audio files), deterministic for export
+  // Helpers below are the shared kit engine — do not diverge from badges/insight.
+  // ---------------------------------------------------------------------------
+  function createSynth(ctx) {
+    let sd = 99;
+    const r = () => (sd = (sd * 16807) % 2147483647, (sd - 1) / 2147483646);
+    const out = ctx.createGain(); out.gain.value = 0.85;
+    const comp = ctx.createDynamicsCompressor();
+    comp.threshold.value = -16; comp.knee.value = 8; comp.ratio.value = 4; comp.attack.value = 0.003; comp.release.value = 0.25;
+    out.connect(comp); comp.connect(ctx.destination);
+
+    const ir = ctx.createBuffer(2, Math.round(ctx.sampleRate * 1.6), ctx.sampleRate);
+    for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch); for (let i = 0; i < d.length; i++) d[i] = (r() * 2 - 1) * Math.pow(1 - i / d.length, 3); }
+    const verb = ctx.createConvolver(); verb.buffer = ir;
+    const wet = ctx.createGain(); wet.gain.value = 0.18; verb.connect(wet); wet.connect(out);
+    const nb = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate);
+    { const d = nb.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = r() * 2 - 1; }
+
+    const voice = (pan = 0, send = 0.4) => {
+      const g = ctx.createGain(); g.gain.value = 0;
+      const p = ctx.createStereoPanner(); p.pan.value = pan;
+      g.connect(p); p.connect(out);
+      if (send) { const s = ctx.createGain(); s.gain.value = send; p.connect(s); s.connect(verb); }
+      return { g, p };
+    };
+    const env = (param, t, peak, a, d) => { param.setValueAtTime(0, t); param.linearRampToValueAtTime(peak, t + a); param.exponentialRampToValueAtTime(0.0001, t + a + d); };
+    const osc = (type, f, t, stop) => { const o = ctx.createOscillator(); o.type = type; o.frequency.setValueAtTime(f, t); o.start(t); o.stop(stop); return o; };
+    const noise = (t, stop) => { const n = ctx.createBufferSource(); n.buffer = nb; n.loop = true; n.start(t, r() * 1.5); n.stop(stop); return n; };
+    const filt = (type, f, q = 0.7) => { const b = ctx.createBiquadFilter(); b.type = type; b.frequency.value = f; b.Q.value = q; return b; };
+    const swell = (param, t, d, peak, at = 0.7) => { param.setValueAtTime(0, t); param.linearRampToValueAtTime(peak, t + d * at); param.exponentialRampToValueAtTime(0.0001, t + d + 0.12); };
+
+    const N = n => 440 * Math.pow(2, (n - 69) / 12);
+    const C3 = 48, G3 = 55, C4 = 60, E4 = 64, G4 = 67, C5 = 72, D5 = 74, E5 = 76, G5 = 79, A5 = 81,
+          C6 = 84, D6 = 86, E6 = 88, G6 = 91, A6 = 93, C7 = 96, E7 = 100;
+    const marimba = (t, note, v = 1, pan = 0, bend = 0) => {
+      const f = N(note), a = voice(pan, .35);
+      const o = osc('sine', f * (1 + bend), t, t + .9); o.frequency.exponentialRampToValueAtTime(f, t + .05);
+      o.connect(a.g); env(a.g.gain, t, .42 * v, .003, .5);
+      const b = voice(pan, .2), o2 = osc('sine', f * 4, t, t + .2); o2.connect(b.g); env(b.g.gain, t, .1 * v, .002, .06);
+      const c = voice(pan, 0), o3 = osc('sine', f * 9.9, t, t + .08); o3.connect(c.g); env(c.g.gain, t, .04 * v, .001, .02);
+    };
+    const bell = (t, note, v = 1, pan = 0, len = 1.2) => {
+      [[1, .2], [2.76, .07], [5.4, .035], [8.93, .015]].forEach(([m, g], j) => {
+        const a = voice(pan, .8), o = osc('sine', N(note) * m, t, t + len + .2);
+        o.connect(a.g); env(a.g.gain, t, g * v, .002, len / (1 + j * .9));
+      });
+    };
+    const pluck = (t, note, v = 1, pan = 0) => {
+      const a = voice(pan, .7), o = osc('triangle', N(note), t, t + .5); o.connect(a.g); env(a.g.gain, t, .1 * v, .002, .22);
+      const b = voice(pan, .7), o2 = osc('sine', N(note) * 2, t, t + .3); o2.connect(b.g); env(b.g.gain, t, .05 * v, .002, .1);
+    };
+
+    // -------------------------------------------------------------------------
+    // The launch, in C major. It is a superhero leaving the ground, so the shape
+    // is: gather → thrust → rise → arrive → reward.
+    // -------------------------------------------------------------------------
+    const S = {
+      // knees bend: a low woody double, falling, the sound of loading a spring
+      crouch(t) { marimba(t, C4, .55, -.1, -.3); marimba(t + .085, G3, .45, .1, -.2); },
+
+      // the launch itself. Three layers, because one is never heroic enough:
+      //   1. a low thrust that drops away under everything — the push off the ground
+      //   2. a rising major arpeggio C5-E5-G5-C6 as plucks, 60 ms apart, the lift
+      //   3. a marimba on the top note so it lands somewhere, not just trails off
+      launch(t, d) {
+        const kk = voice(0, .12), o = osc('sine', 180, t, t + .42);
+        o.frequency.exponentialRampToValueAtTime(48, t + .3); o.connect(kk.g); env(kk.g.gain, t, .55, .004, .3);
+        [C5, E5, G5, C6].forEach((n, j) => pluck(t + .02 + j * .06, n, .95 - j * .08, -.45 + j * .3));
+        marimba(t + .26, C6, .85, .2, -.05);
+        bell(t + .26, G6, .28, .35, .9);
+      },
+
+      // cloud puffs: soft low woody taps, panned apart. Deliberately NOT noise —
+      // the kit's rule is no harsh noise, and air hiss here fights the arpeggio.
+      puff(t, d, v, cue) { marimba(t, C4 + (cue.up ? 2 : 0), .3 * (v ?? 1), cue.pan ?? 0, -.25); },
+
+      // settle into the hover: the kit's own settle, a soft woody arrival
+      settle(t) { marimba(t, C6, .5, 0, -.15); marimba(t + .06, G5, .36, 0, -.1); },
+
+      // the wordmark: the reward chord. Kick underneath for weight, triad spread
+      // left to right, bells on top for the shine.
+      tada(t) {
+        const kk = voice(0, .1), o = osc('sine', 120, t, t + .3);
+        o.frequency.exponentialRampToValueAtTime(55, t + .12); o.connect(kk.g); env(kk.g.gain, t, .5, .002, .16);
+        [C5, E5, G5].forEach((n, j) => marimba(t + j * .012, n, .75, -.3 + j * .3));
+        marimba(t + .11, C6, .9, .2);
+        bell(t + .11, E6, .9, .25, 1.4);
+        bell(t + .11, G6, .5, -.2, 1.2);
+      },
+
+      // reward accent: two high bells, wide
+      sparkle(t) { [E7, C7 + 7].forEach((n, j) => bell(t + j * .1, n, .32, -.45 + j * .9, .6)); },
+    };
+    return { out, play(cue, at) { S[cue.sound]?.(Math.max(at, 0), cue.d ?? .6, cue.v ?? 1, cue); } };
+  }
+
+  // ---------------------------------------------------------------------------
+  // The cue sheet. Times are the animation's own beats, and every entry carries
+  // its haptic so sound and touch can never drift apart.
+  // ---------------------------------------------------------------------------
+  const CUES = [
+    { t: 0.55, sound: 'crouch',
+      haptic: [{ t: 0, type: 'transient', i: 0.28, s: 0.3 }] },
+
+    { t: 0.68, sound: 'launch', d: 0.42,
+      haptic: [
+        // the thrust swells under the arpeggio, then a hard tap as it leaves the ground
+        { t: 0, type: 'continuous', d: 0.22, i: 0.75, s: 0.45, ramp: [0.25, 1] },
+        { t: 0.24, type: 'transient', i: 0.95, s: 0.75 },
+      ] },
+
+    { t: 0.80, sound: 'puff', pan: -0.6, v: 1.0,
+      haptic: [{ t: 0, type: 'transient', i: 0.18, s: 0.2 }] },
+    { t: 0.90, sound: 'puff', pan: 0.55, v: 0.8, up: true,
+      haptic: [{ t: 0, type: 'transient', i: 0.14, s: 0.2 }] },
+
+    { t: 1.50, sound: 'settle',
+      haptic: [{ t: 0, type: 'transient', i: 0.3, s: 0.35 }] },
+
+    { t: 1.85, sound: 'tada',
+      haptic: [
+        { t: 0, type: 'transient', i: 0.7, s: 0.8 },
+        { t: 0.06, type: 'continuous', d: 0.34, i: 0.3, s: 0.6, ramp: [1, 0.15] },
+      ] },
+
+    { t: 2.30, sound: 'sparkle',
+      haptic: [
+        { t: 0, type: 'transient', i: 0.2, s: 1.0 },
+        { t: 0.1, type: 'transient', i: 0.15, s: 1.0 },
+      ] },
+  ];
+
+  const cuesBetween = (a, b) => CUES.filter(c => c.t >= a && c.t < b);
+
+  // ---------------------------------------------------------------------------
+  // Offline render — 16-bit stereo WAV, base64. Same as the badge engine's.
+  // ---------------------------------------------------------------------------
+  window.renderAudio = async (from, to, sr = 48000) => {
+    const ctx = new OfflineAudioContext(2, Math.ceil((to - from) * sr), sr);
+    const syn = createSynth(ctx);
+    for (const c of cuesBetween(from, to)) syn.play(c, c.t - from);
+    const buf = await ctx.startRendering();
+    const n = buf.length, L = buf.getChannelData(0), R = buf.getChannelData(1);
+    const bytes = new Uint8Array(44 + n * 4), dv = new DataView(bytes.buffer);
+    const str = (o, s) => [...s].forEach((ch, i) => dv.setUint8(o + i, ch.charCodeAt(0)));
+    str(0, 'RIFF'); dv.setUint32(4, 36 + n * 4, true); str(8, 'WAVEfmt '); dv.setUint32(16, 16, true);
+    dv.setUint16(20, 1, true); dv.setUint16(22, 2, true); dv.setUint32(24, sr, true); dv.setUint32(28, sr * 4, true);
+    dv.setUint16(32, 4, true); dv.setUint16(34, 16, true); str(36, 'data'); dv.setUint32(40, n * 4, true);
+    for (let i = 0; i < n; i++) {
+      dv.setInt16(44 + i * 4, clamp(L[i], -1, 1) * 32767, true);
+      dv.setInt16(46 + i * 4, clamp(R[i], -1, 1) * 32767, true);
+    }
+    let bin = ''; for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+    return btoa(bin);
+  };
+
+  // ---------------------------------------------------------------------------
+  // Haptics: the same cue sheet → iOS AHAP, Android waveform, web vibrate.
+  // ---------------------------------------------------------------------------
+  function hapticEvents() {
+    const ev = [];
+    for (const c of CUES) for (const h of c.haptic || []) ev.push({ ...h, t: +(c.t + h.t).toFixed(3) });
+    return ev.sort((a, b) => a.t - b.t);
+  }
+  function hapticEnvelope(step = 10) {
+    const ev = hapticEvents();
+    const end = Math.max(...ev.map(e => e.t + (e.d || 0.05))) + 0.05;
+    const amp = new Array(Math.ceil(end * 1000 / step)).fill(0);
+    for (const e of ev) {
+      const i0 = Math.round(e.t * 1000 / step);
+      if (e.type === 'transient') {
+        const len = Math.max(1, Math.round(lerp(40, 12, e.s) / step));
+        for (let i = 0; i < len; i++) amp[i0 + i] = Math.max(amp[i0 + i], Math.round(e.i * 255));
+      } else {
+        const len = Math.round(e.d * 1000 / step), [r0, r1] = e.ramp || [1, 1];
+        for (let i = 0; i < len; i++) amp[i0 + i] = Math.max(amp[i0 + i], Math.round(e.i * lerp(r0, r1, i / len) * 255));
+      }
+    }
+    return { step, amp };
+  }
+  function webPattern(step = 10) {
+    const ev = hapticEvents();
+    const end = Math.max(...ev.map(e => e.t + (e.d || 0.05))) + 0.05;
+    const on = new Array(Math.ceil(end * 1000 / step)).fill(false);
+    for (const e of ev) {
+      const i0 = Math.round(e.t * 1000 / step);
+      if (e.type === 'transient') {
+        const len = Math.max(1, Math.round(lerp(12, 45, e.i) / step));
+        for (let i = 0; i < len; i++) on[i0 + i] = true;
+      } else {
+        const len = Math.round(e.d * 1000 / step), [r0, r1] = e.ramp || [1, 1];
+        for (let i = 0; i < len; i++) if (((i0 + i) % 4) < Math.max(1, Math.round(e.i * lerp(r0, r1, i / len) * 4))) on[i0 + i] = true;
+      }
+    }
+    const pat = []; let cur = true, run = 0;
+    for (const o of on) { if (o === cur) run += step; else { pat.push(run); cur = o; run = step; } }
+    pat.push(run);
+    return pat;
+  }
+  window.launchHaptics = (audioFile) => {
+    const ev = hapticEvents();
+    const P = (id, v) => ({ ParameterID: id, ParameterValue: +v.toFixed(3) });
+    const pattern = [];
+    if (audioFile) pattern.push({ Event: { Time: 0, EventType: 'AudioCustom', EventWaveformPath: audioFile, EventParameters: [P('AudioVolume', 1)] } });
+    for (const e of ev) {
+      if (e.type === 'transient') pattern.push({ Event: { Time: e.t, EventType: 'HapticTransient', EventParameters: [P('HapticIntensity', e.i), P('HapticSharpness', e.s)] } });
+      else {
+        pattern.push({ Event: { Time: e.t, EventType: 'HapticContinuous', EventDuration: e.d, EventParameters: [P('HapticIntensity', e.i), P('HapticSharpness', e.s)] } });
+        if (e.ramp) pattern.push({ ParameterCurve: { ParameterID: 'HapticIntensityControl', Time: e.t, ParameterCurveControlPoints: [{ Time: 0, ParameterValue: e.ramp[0] }, { Time: e.d, ParameterValue: e.ramp[1] }] } });
+      }
+    }
+    const ahap = { Version: 1.0, Metadata: { Project: 'Twist Launch', Created: 'cue sheet in launch_sound.html' }, Pattern: pattern };
+    const { step, amp } = hapticEnvelope();
+    const timings = [], amplitudes = [];
+    for (const a of amp) {
+      if (amplitudes.length && amplitudes[amplitudes.length - 1] === a) timings[timings.length - 1] += step;
+      else { timings.push(step); amplitudes.push(a); }
+    }
+    return { events: ev, ahap, android: { timings, amplitudes }, web: webPattern() };
+  };
+  window.CUES = CUES;
+
+  // Click to hear it in a normal browser.
+  document.getElementById('play').onclick = async () => {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const syn = createSynth(ctx);
+    const t0 = ctx.currentTime + 0.05;
+    for (const c of CUES) syn.play(c, t0 + c.t);
+    document.getElementById('log').textContent = CUES.map(c => `${c.t.toFixed(2)}s  ${c.sound}`).join('\n');
+  };
+</script>
+</body>

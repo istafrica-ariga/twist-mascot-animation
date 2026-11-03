@@ -17,3 +17,6 @@ out/masko_redo/cmp/
 
 .DS_Store
 *.log
+
+# Build artefact: regenerate with `zip -r` from out/masko_redo (see its README).
+out/masko_redo/twist_launch_kit.zip
