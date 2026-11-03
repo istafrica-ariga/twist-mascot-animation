@@ -14,6 +14,43 @@ The kit's rule, from `_kit/GUIDE.md`:
 [`../../../tools/launch_sound.html`](../../../tools/launch_sound.html); render with
 `node tools/render_launch_sound.mjs`.
 
+## What the research actually said
+
+Three passes at this were rejected before I stopped guessing and looked it up.
+
+**Duolingo's sound designer is Ambrose Yu.** On his own portfolio he says the palette was built in
+2021 on an **OP-1 synthesizer and a marimba**, "blending video game and cartoon theme music", and
+that the palette stuck — later sounds come from the same handful of instruments. He describes the
+system as *"one musical and sonic idea, three levels of reward"*: the most-heard sounds are all
+built off the correct-answer sound, which then escalates for a 5-in-a-row, a 10-in-a-row and a
+perfect lesson.
+
+**The atom is a rising major third.** A music-theory breakdown of the correct-answer sound puts it
+at two sixteenth notes, F♯ → A♯ — the bright part of a major chord. (Informal analysis, not an
+official source, so treat the exact pitches as a claim; the *interval* is what matters here.)
+
+That is what the earlier passes were missing, and no amount of better synthesis would have fixed
+it. They were **six unrelated noises**. Duolingo's are **one idea at different sizes**.
+
+So this version is built from a single motif — a rising major third — and nothing else:
+
+| cue | the motif, as |
+|---|---|
+| `crouch` | **inverted and falling** (E4 → C4) — the only descending third in the clip, which is what makes it read as a wind-up |
+| `launch` | **sequenced upward**: C5→E5, E5→G♯5, G♯5→C6 — three thirds stacked end to end |
+| `puff` | just its lower note, woody and quiet |
+| `settle` | at rest, slow (C6 → G♯5) |
+| `tada` | **harmonised at the top** (C6 → E6) over a C–E–G triad — the same idea at its largest |
+| `sparkle` | tiny, high and wide (E7 → G♯7) |
+
+Verified by pitch-detecting the render rather than trusting the code: the launch measures
+C5 → E5 → G♯5 → C6, the tada C6 → E6, the crouch E4 → C4.
+
+**Timbre.** The badge kit's marimba and bells are pure sines, which are clean but cannot do the
+video-game half of Duolingo's palette. Added an `opone` voice for that: a pair of square waves
+7 cents apart through a soft waveshaper, low-passed. The beating between the two and the gentle
+drive are the OP-1 character; it sits under the crouch, the launch and the tada.
+
 ## The cue sheet
 
 | time | sound | what it is | haptics |

@@ -76,45 +76,91 @@
     };
 
     // -------------------------------------------------------------------------
-    // The launch, in C major. It is a superhero leaving the ground, so the shape
-    // is: gather → thrust → rise → arrive → reward.
+    // Two voices the badge kit does not have, added from research into how
+    // Duolingo's audio is actually built (Ambrose Yu, its sound designer: the
+    // palette is an OP-1 synthesizer and a marimba, "blending video game and
+    // cartoon theme music").
+    // -------------------------------------------------------------------------
+
+    // OP-1 flavour: a pulse pair, slightly detuned against itself, through a
+    // gentle waveshaper. The grit and the beating between the two oscillators are
+    // what the kit's pure sines cannot do — this is the video-game half of the
+    // palette, and its absence is why earlier passes sounded clean but generic.
+    const shaper = (() => {
+      const ws = ctx.createWaveShaper(), c = new Float32Array(1024);
+      for (let i = 0; i < 1024; i++) { const x = i / 512 - 1; c[i] = Math.tanh(x * 2.2) / Math.tanh(2.2); }
+      ws.curve = c; ws.oversample = '2x'; return ws;
+    })();
+    const opone = (t, note, v = 1, pan = 0, len = .22, glide = 0) => {
+      const f = N(note), a = voice(pan, .3);
+      const drive = ctx.createGain(); drive.gain.value = 1; drive.connect(shaper); shaper.connect(a.g);
+      [0, +7].forEach(cents => {                       // 7 cents apart: slow beating, not a chorus
+        const o = osc('square', f * Math.pow(2, cents / 1200), t, t + len + .1);
+        if (glide) o.frequency.exponentialRampToValueAtTime(N(note + glide), t + len * .55);
+        const lp = filt('lowpass', Math.min(f * 7, 6500), 1.1);
+        o.connect(lp); lp.connect(drive);
+      });
+      env(a.g.gain, t, .085 * v, .004, len);
+    };
+
+    // The Duolingo atom, as close as research gets: the correct-answer sound is
+    // two sixteenth notes a rising MAJOR THIRD apart. Everything in their system
+    // escalates from that one idea, so everything here is built from it too.
+    const THIRD = 4;                                   // semitones
+    const duo = (t, note, v = 1, pan = 0, gap = .07) => {
+      marimba(t, note, .55 * v, pan, -.06);
+      bell(t, note, .16 * v, pan, .5);
+      marimba(t + gap, note + THIRD, .7 * v, pan, -.04);
+      bell(t + gap, note + THIRD, .26 * v, pan, .7);
+    };
+
+    // -------------------------------------------------------------------------
+    // The launch, in C major. A superhero leaving the ground: gather → thrust →
+    // rise → arrive → reward. Every cue is the rising-third motif at a different
+    // level, so the clip is one musical idea rather than six unrelated noises.
     // -------------------------------------------------------------------------
     const S = {
-      // knees bend: a low woody double, falling, the sound of loading a spring
-      crouch(t) { marimba(t, C4, .55, -.1, -.3); marimba(t + .085, G3, .45, .1, -.2); },
-
-      // the launch itself. Three layers, because one is never heroic enough:
-      //   1. a low thrust that drops away under everything — the push off the ground
-      //   2. a rising major arpeggio C5-E5-G5-C6 as plucks, 60 ms apart, the lift
-      //   3. a marimba on the top note so it lands somewhere, not just trails off
-      launch(t, d) {
-        const kk = voice(0, .12), o = osc('sine', 180, t, t + .42);
-        o.frequency.exponentialRampToValueAtTime(48, t + .3); o.connect(kk.g); env(kk.g.gain, t, .55, .004, .3);
-        [C5, E5, G5, C6].forEach((n, j) => pluck(t + .02 + j * .06, n, .95 - j * .08, -.45 + j * .3));
-        marimba(t + .26, C6, .85, .2, -.05);
-        bell(t + .26, G6, .28, .35, .9);
+      // LEVEL 0 — knees bend. The motif inverted and low: the only falling third
+      // in the clip, which is what makes it read as a wind-up rather than an event.
+      crouch(t) {
+        marimba(t, C4 + THIRD, .5, -.1, -.3);
+        marimba(t + .07, C4, .42, .1, -.2);
+        opone(t, C4 - 12, .5, 0, .16);
       },
 
-      // cloud puffs: soft low woody taps, panned apart. Deliberately NOT noise —
-      // the kit's rule is no harsh noise, and air hiss here fights the arpeggio.
-      puff(t, d, v, cue) { marimba(t, C4 + (cue.up ? 2 : 0), .3 * (v ?? 1), cue.pan ?? 0, -.25); },
+      // LEVEL 1 — the launch. The motif SEQUENCED upward: C→E, E→G♯, G♯→C.
+      // Three rising thirds stacked end to end, so the lift is the same idea
+      // climbing rather than a generic arpeggio. Underneath it, a thrust drop and
+      // the OP-1 pulse gliding up a fifth, which is the cartoon half of the palette.
+      launch(t, d) {
+        const kk = voice(0, .12), o = osc('sine', 190, t, t + .44);
+        o.frequency.exponentialRampToValueAtTime(46, t + .32); o.connect(kk.g); env(kk.g.gain, t, .6, .004, .32);
+        opone(t, C4, .9, 0, .3, 7);
+        [[C5, -.4], [E5, 0], [G5 + 1, .35]].forEach(([n, pan], j) => duo(t + .04 + j * .085, n, .8 - j * .06, pan, .055));
+        marimba(t + .3, C6, .8, .2, -.05);
+      },
 
-      // settle into the hover: the kit's own settle, a soft woody arrival
-      settle(t) { marimba(t, C6, .5, 0, -.15); marimba(t + .06, G5, .36, 0, -.1); },
+      // cloud puffs: the motif's lower note alone, woody and quiet. Deliberately
+      // NOT noise — the kit forbids harsh noise, and hiss here fights the motif.
+      puff(t, d, v, cue) { marimba(t, C4 + (cue.up ? THIRD : 0), .28 * (v ?? 1), cue.pan ?? 0, -.25); },
 
-      // the wordmark: the reward chord. Kick underneath for weight, triad spread
-      // left to right, bells on top for the shine.
+      // settle into the hover: the motif at rest, slow and soft
+      settle(t) { marimba(t, C6, .46, 0, -.15); marimba(t + .08, C6 - THIRD, .34, 0, -.1); },
+
+      // LEVEL 2 — the wordmark. The motif at the top, now harmonised: kick for
+      // weight, the C-E-G triad under it, and the third rung out on bells. This is
+      // the payoff, so it is the same idea at its largest, not a different sound.
       tada(t) {
         const kk = voice(0, .1), o = osc('sine', 120, t, t + .3);
         o.frequency.exponentialRampToValueAtTime(55, t + .12); o.connect(kk.g); env(kk.g.gain, t, .5, .002, .16);
-        [C5, E5, G5].forEach((n, j) => marimba(t + j * .012, n, .75, -.3 + j * .3));
-        marimba(t + .11, C6, .9, .2);
-        bell(t + .11, E6, .9, .25, 1.4);
-        bell(t + .11, G6, .5, -.2, 1.2);
+        [C5, E5, G5].forEach((n, j) => marimba(t + j * .012, n, .7, -.3 + j * .3));
+        opone(t, C4, .55, 0, .26);
+        duo(t + .10, C6, 1.0, .1, .075);
+        bell(t + .175, G6, .45, -.2, 1.3);
       },
 
-      // reward accent: two high bells, wide
-      sparkle(t) { [E7, C7 + 7].forEach((n, j) => bell(t + j * .1, n, .32, -.45 + j * .9, .6)); },
+      // LEVEL 3 — reward accent: the motif tiny, high and wide
+      sparkle(t) { bell(t, E6 + 12, .3, -.45, .6); bell(t + .075, E6 + 12 + THIRD, .24, .5, .7); },
     };
     return { out, play(cue, at) { S[cue.sound]?.(Math.max(at, 0), cue.d ?? .6, cue.v ?? 1, cue); } };
   }
