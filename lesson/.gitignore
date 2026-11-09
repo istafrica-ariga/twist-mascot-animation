@@ -1,0 +1,27 @@
+# Generation intermediates. Every pass leaves a 3 MB raw per clip plus closed/fixed/held variants,
+# and masko/out is full of contact sheets and frame grids used to judge them. Only the finished
+# clips are worth keeping; everything here can be regenerated from the prompts.
+masko/clips/*_raw.mp4
+masko/clips/*_closed.mp4
+masko/clips/*_fixed.mp4
+masko/clips/*_held.mp4
+masko/clips/*_preview.mp4
+masko/clips/idle_loop*
+masko/clips/idle_to_yes*
+masko/out/
+masko/poses/
+masko/strips/
+masko/_mf/
+
+# Earlier experiments in this folder, superseded by masko/
+build/
+costume/
+poses/
+strips/
+out/
+
+# Unreleased product UI. The screen mockup and the overlay drawn on it are app design, not mascot
+# assets, and this repository is public. The measurements taken from it are written up in
+# masko/STATES.md instead.
+ref/lesson_screen.png
+ref/point_geometry.svg

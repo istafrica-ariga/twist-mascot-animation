@@ -1,0 +1,10 @@
+# 2026-11-09 pass 6 — small stick, measured mouth, pinned eyes. modelId 3243, 768P 1:1 5s
+# poses: idle b2666e43-1524-43c9-8f29-b7727ab9cbad
+#        pleased a41323f6-9911-426c-b680-7dd193b9c95f
+#        sheepish 158fbc80-31d7-48ee-845d-c1c648390bd7
+idle      01a1c02a-21d8-7deb-8098-dad67ba0a842   idle -> idle
+narrate   01a1c02a-edfe-749a-b812-601ff37ac988   idle -> idle
+pleased   01a1c02b-69b8-7aa9-9bf0-b8534a0d5883   pleased -> pleased
+sheepish  01a1c02b-e3e0-70f4-8aa9-6e8335b22518   sheepish -> sheepish
+yes       01a1c02c-5fd0-7bfb-b3fc-b326c1fae486   idle -> pleased
+oops      01a1c02c-d8f6-74ab-8f05-270387e2ff8f   idle -> sheepish

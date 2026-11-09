@@ -1,0 +1,69 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Mascot states</title>
+<style>
+  :root { --bg:#17122b; --panel:#221a3d; --line:#3a2f5e; --ink:#efeafc; --mut:#9a8fc4;
+          --pur:#7C3AED; --grn:#15803D; --red:#B91C1C; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink); min-height:100vh;
+         font:15px/1.5 Inter,-apple-system,Segoe UI,Roboto,sans-serif;
+         display:grid; grid-template-columns:1fr 300px; gap:28px; padding:28px }
+  h1 { font-size:19px; margin:0 0 2px }
+  p.sub { color:var(--mut); margin:0 0 20px; font-size:13.5px }
+  #stage { background:var(--pur); border-radius:18px; aspect-ratio:1; width:100%; max-width:440px }
+  #state { font:700 26px/1 Inter,sans-serif; letter-spacing:.5px; margin:18px 0 4px }
+  #join { color:var(--mut); font-size:13px; font-variant-numeric:tabular-nums }
+  .group { margin-bottom:16px }
+  .group h2 { font-size:11px; letter-spacing:1.3px; text-transform:uppercase;
+              color:var(--mut); margin:0 0 7px; font-weight:700 }
+  button { width:100%; margin-bottom:6px; padding:10px 12px; border-radius:10px; cursor:pointer;
+           background:var(--panel); color:var(--ink); border:1px solid var(--line);
+           font:600 13.5px Inter,sans-serif; text-align:left }
+  button:hover { border-color:var(--pur) }
+  button.g { border-color:var(--grn) } button.r { border-color:var(--red) }
+  #log { margin-top:14px; font:12px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;
+         color:var(--mut); white-space:pre-wrap; max-height:190px; overflow:auto }
+  code { color:var(--ink) }
+</style>
+<div>
+  <h1>Twist mascot — six clips connected</h1>
+  <p class="sub">A reaction flows into a mood and the mood holds until the child moves on.</p>
+  <div id="stage"></div>
+  <div id="state">IDLE</div>
+  <div id="join">started</div>
+</div>
+<div>
+  <div class="group"><h2>Directions</h2>
+    <button data-e="speak">speak() — read the words</button>
+    <button data-e="speechEnd">speechEnd()</button>
+  </div>
+  <div class="group"><h2>The child answers</h2>
+    <button class="g" data-e="answerCorrect">answerCorrect()</button>
+    <button class="r" data-e="answerWrong">answerWrong()</button>
+  </div>
+  <div class="group"><h2>Moving on</h2>
+    <button data-e="nextQuestion">nextQuestion()</button>
+    <button data-e="retry">retry()</button>
+    <button data-e="hint">hint()</button>
+  </div>
+  <div id="log"></div>
+</div>
+<script type="module">
+  import { mountMascot } from './dom.js';
+  const stateEl = document.getElementById('state');
+  const joinEl  = document.getElementById('join');
+  const logEl   = document.getElementById('log');
+  const line = s => { logEl.textContent = s + '\n' + logEl.textContent; };
+
+  const mascot = mountMascot(document.getElementById('stage'), {
+    onChange(clip, ms) {
+      stateEl.textContent = clip.toUpperCase();
+      joinEl.textContent = ms ? `${ms}ms blend in` : 'hard cut — same pose on both sides';
+      line(`${clip.padEnd(9)} ${ms ? ms + 'ms' : 'cut'}`);
+    },
+  });
+  line(`format: .${mascot.format.ext}`);
+  for (const b of document.querySelectorAll('button[data-e]'))
+    b.onclick = () => { if (!mascot[b.dataset.e]()) line(`${b.dataset.e} — ignored in ${mascot.state}`); };
+  window.mascot = mascot;
+</script>
