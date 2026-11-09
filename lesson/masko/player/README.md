@@ -9,7 +9,9 @@ dom.js       two stacked <video> layers, crossfade, format pick
 demo.html    click the events and watch it
 ```
 
-Run it:
+**Live:** https://istafrica-ariga.github.io/twist-mascot-animation/
+
+Run it locally:
 
 ```bash
 python3 -m http.server 8745 --directory /Users/ariga/Documents/mascot/lesson
