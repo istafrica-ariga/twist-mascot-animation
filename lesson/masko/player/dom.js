@@ -7,12 +7,14 @@
 import { CLIPS, MascotMachine } from './machine.js';
 
 // HEVC-with-alpha plays on Apple platforms and nowhere else; VP9-with-alpha plays everywhere else.
-// Both are shipped, and the browser is asked which it can take rather than being sniffed.
+// Both live in masko/web at 256 px, which is what the app shows: the mascot renders at 69 x 75 px
+// on the lesson screen, so 256 covers a 3x retina phone and the 768 masters in masko/clips are
+// about eight times larger for nothing. The browser is asked which codec it can take rather than
+// being sniffed.
 function pickFormat(probe = document.createElement('video')) {
   const hevc = probe.canPlayType('video/mp4; codecs="hvc1"');
-  return hevc === 'probably' || hevc === 'maybe'
-    ? { dir: '../clips', ext: 'mov' }
-    : { dir: '../web', ext: 'webm' };
+  const ext = hevc === 'probably' || hevc === 'maybe' ? 'mov' : 'webm';
+  return { dir: '../web', ext };
 }
 
 export function mountMascot(host, opts = {}) {

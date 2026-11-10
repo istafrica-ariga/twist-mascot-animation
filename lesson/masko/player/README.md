@@ -66,10 +66,22 @@ something.
 
 Both are shipped, and the browser is asked which it can take rather than being sniffed:
 
-| | file | plays on |
-|---|---|---|
-| HEVC + alpha | `masko/clips/*.mov` | Safari, iOS, macOS |
-| VP9 + alpha | `masko/web/*.webm` | Chrome, Edge, Firefox, Android |
+`masko/web/` is what ships, both formats at **256 px**. `masko/clips/` keeps the 768 px masters;
+`masko/ship.sh 256` re-derives the small set from them.
+
+| | file | plays on | set |
+|---|---|---|---|
+| HEVC + alpha | `masko/web/*.mov` | Safari, iOS, macOS | **1,089 KB** |
+| VP9 + alpha | `masko/web/*.webm` | Chrome, Edge, Firefox, Android | **597 KB** |
+
+Each platform downloads one of those, not both. The mascot renders at **69 x 75 px** on the lesson
+screen, so 256 covers a 3x retina phone with room spare — the 768 masters were 6,962 KB and
+4,723 KB for no visible difference.
+
+Two things worth not rediscovering when re-encoding: `scale` **drops the alpha** unless
+`format=yuva420p` follows it, and `ffprobe` reports `pix_fmt=yuv420p` for VP9-with-alpha either
+way — so the thing to check is the `alpha_mode` stream tag, not the pixel format. `ship.sh` prints
+it for every file it writes.
 
 ## Dropping it into the Expo app
 
